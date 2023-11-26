@@ -80,7 +80,7 @@ export const ModalSigning: React.FC<ModalSigningProps> = ({
     mutationData?.__typename === "RegisterErrors" && mutationData.errors;
   console.log(mutationErrors);
 
-  const getFieldsError = (errors: RegisterErrors) => {
+  const getFieldsError = (errors: RegisterErrors['errors']) => {
     return ["email", "password"]
       .map((field) => {
         if (errors[field]) {

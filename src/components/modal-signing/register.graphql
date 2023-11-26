@@ -18,6 +18,7 @@ mutation Register($input: RegisterInput!) {
       errors {
         email
         password
+        fullname
       }
     }
   }
