@@ -25,6 +25,8 @@ const App = ({ Component, pageProps }) => {
         <StripeProvider>
           <Head>
             <title>Associazione Python Italia</title>
+            <meta content="@pythonitalia@social.python.it" name="fediverse:creator">
+            <link href="https://social.python.it/@pythonitalia" rel="me" />
             <link rel="icon" href="/favicon.png" />
             <link
               href="https://fonts.googleapis.com/css?family=Montserrat:300,700"
